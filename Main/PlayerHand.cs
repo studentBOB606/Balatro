@@ -5,11 +5,11 @@ using Cards;
 
 namespace KlasUitwerking
 {
-    class PlayerHand
+    public class PlayerHand
     {
         public List<Card> Hand { get; set; }
         public int MaxCards { get; private set; }
-        private List<int> SelectedIndexes;
+        public List<int> SelectedIndexes { get; private set; }
 
         public PlayerHand(int maxCards)
         {
