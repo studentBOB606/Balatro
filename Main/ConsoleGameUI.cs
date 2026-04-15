@@ -70,29 +70,25 @@ namespace KlasUitwerking
         public void DisplayScoreBreakdown(List<Card> hand, int totalScore)
         {
             Console.WriteLine("\n╔════════════════════════════════════╗");
-            Console.WriteLine("║       SCORE BREAKDOWN              ║");
-            Console.WriteLine("╠════════════════════════════════════╣");
+            Console.WriteLine("║       SCORE BREAKDOWN                ║");
+            Console.WriteLine("╠══════════════════════════════════════╣");
             foreach (var card in hand)
             {
                 Console.WriteLine($"║ {card}: {(int)card.Value} points");
             }
             Console.WriteLine("╠════════════════════════════════════╣");
-            Console.WriteLine($"║ TOTAL SCORE: {totalScore}");
+            Console.WriteLine($"║ TOTAL SCORE: {totalScore}         ║");      
             Console.WriteLine("╚════════════════════════════════════╝");
         }
 
         public void DisplayCumulativeScoreBreakdown(List<Card> hand, int totalScore)
         {
-            Console.WriteLine("\n╔════════════════════════════════════╗");
-            Console.WriteLine("║   CUMULATIVE ROUND SCORE           ║");
-            Console.WriteLine("╠════════════════════════════════════╣");
+            Console.WriteLine("\nEVALUATOR");
             foreach (var card in hand)
             {
-                Console.WriteLine($"║ {card}: {(int)card.Value} points");
+                Console.WriteLine($"{card}: {(int)card.Value} points");
             }
-            Console.WriteLine("╠════════════════════════════════════╣");
-            Console.WriteLine($"║ ROUND TOTAL: {totalScore}");
-            Console.WriteLine("╚════════════════════════════════════╝");
+            Console.WriteLine($"ROUND TOTAL: {totalScore}");
         }
 
         public void DisplayMessage(string message)
