@@ -4,9 +4,7 @@ using Cards;
 
 namespace KlasUitwerking
 {
-    /// <summary>
-    /// Interface for validating poker hand combinations
-    /// </summary>
+   
     public interface IHandCombination
     {
         string CombinationName { get; }
